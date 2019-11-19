@@ -1,0 +1,257 @@
+body {
+    scroll-behavior: smooth;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+    background-color: #061323;
+    font-family: "Raleway", sans-serif;
+}
+
+
+h1 {
+    font-size: 120px;
+}
+
+#header-job {
+    background-image: url(image-job/job-header.png);
+    background-size: cover;
+    width: 100%;
+    height: 115vh;
+    border-radius: 0% 0% 50% 50% / 0% 0% 15% 15%;
+    background-position: 50% 50%;
+}
+
+#header-h1 {
+    max-width: 1000px;
+    font-weight: 1000;
+}
+
+#header-button-job {
+    width: 270px;
+    margin: 0 auto;
+    padding: 15px 5px;
+}
+
+#header-button-job button {
+    padding: 15px 60px;
+    font-size: 24px;
+    color: #d3d3d3;
+    background-color: rgba(1, 1, 1, .1);
+    border: solid 4px rgb(135, 0, 10);
+    border-radius: 14px;
+    cursor: pointer;
+    font-weight: 1000;
+    transition: all .3s ease;
+}
+
+#header-button-job button:hover {
+    background-color: rgb(135, 0, 10);
+    color: #ffffff;
+}
+
+
+
+.perks {
+    width: 35%;
+    min-width: 250px;
+    height: auto;
+    border: 3px solid rgba(135, 0, 10, .4);
+    border-radius: 16px;
+    margin: 15px;
+    padding: 35px;
+    transition: all .5s ease;
+}
+
+.perks:hover {
+    border: 3px solid rgba(135, 0, 10, 1);
+}
+
+.perks img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+    height: 70px;
+    margin: 0 auto;
+}
+
+.perks p {
+    text-align: center;
+    font-size: 16px;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: #d3d3d3;
+}
+
+#grid-apply-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 30px;
+    margin-top: 50px;
+    transition: all .3s ease;
+}
+
+#inline-grid {
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 20px;
+}
+
+#grid-apply-container .main-input {
+
+    background-color: #0e1b2b;
+    border-radius: 7px;
+    height: 60px;
+    border: 0px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 15px;
+    color: #d3d3d3;
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    outline: 0px;
+}
+
+#grid-apply-container .main-input:focus {
+    background-color: #131F35;
+}
+
+#grid-apply-container select {
+
+    background-color: #0e1b2b;
+    border-radius: 7px;
+    height: 60px;
+    border: 0px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 15px;
+    color: #747474;
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    outline: 0px;
+}
+
+#grid-apply-container select:focus {
+    background-color: #131F35;
+}
+
+#grid-apply-container textarea {
+
+    background-color: #0e1b2b;
+    border-radius: 7px;
+    border: 0px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
+    font-size: 15px;
+    color: #d3d3d3;
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    outline: none;
+}
+
+#grid-apply-container textarea:focus {
+    background-color: #131F35;
+}
+
+#parent-grid-apply-select {
+    grid-column: span 2;
+}
+
+#apply-button-div {
+    grid-column: span 2;
+    margin-top: 20px;
+    width: 170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px 5px;
+}
+
+#apply-button-div button {
+    padding: 15px 50px;
+    font-size: 20px;
+    color: #d3d3d3;
+    background-color: transparent;
+    border: 3px solid rgba(135, 0, 10, .5);
+    border-radius: 14px;
+    font-weight: 600;
+    transition: all .3s ease;
+    cursor: pointer;
+}
+
+#apply-button-div button:hover {
+    border: 3px solid rgba(135, 0, 10, 1);
+    background-color: rgb(135, 1, 10);
+    color: #ffffff;
+}
+
+#label-cv {
+    color: #747474;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+#cv-file {
+    display: none;
+}
+
+#label-cv-button {
+    display: inline;
+    color: #747474;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px 20px;
+    border: 3px solid rgba(135, 0, 10, .5);
+    border-radius: 10px;
+
+    text-align: center;
+    transition: all .3s ease;
+    cursor: pointer;
+}
+
+#label-cv-button:hover {
+    color: #ffffff;
+    border: 3px solid rgba(135, 0, 10, 1);
+    background-color: rgba(125, 0, 10, 1);
+}
+
+#file-name {
+    display: inline;
+    padding-left: 10px;
+    color: #d3d3d3;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+@media only screen and (max-width:1000px) {
+    h1 {
+        font-size: 60px;
+    }
+
+    #header-button-job button {
+        font-size: 18px;
+        padding: 15px 40px;
+    }
+
+    #header-button-job {
+        width: 200px;
+    }
+
+    #grid-apply-container {
+        grid-template-columns: auto;
+    }
+
+    #apply-button-div {
+        grid-column: span 1;
+    }
+
+    #grid-apply-container textarea {
+        height: 200px;
+    }
+
+    #header-job {
+        border-radius: 0px;
+    }
+}

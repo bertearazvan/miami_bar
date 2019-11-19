@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Miami reservations</title>
+    <style>
+        h1 {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        #reservation-template {
+            margin-bottom: 50px;
+
+        }
+
+        #reservation-list {
+            margin-top: 150px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>This is the reservation list!</h1>
+    <div id="reservation-list">
+        <template id="reservation-template">
+            <p id="table-number"></p>
+            <p id="reservation-name"></p>
+            <p id="reservation-email"></p>
+            <p id="reservation-phone"></p>
+            <p id="reservation-date"></p>
+            <p id="reservation-time"></p>
+            <p id="reservation-amount"></p>
+            <p id="reservation-commentaries"></p>
+            <hr>
+        </template>
+    </div>
+    <script src="dashboard.js"></script>
+</body>
+
+</html>

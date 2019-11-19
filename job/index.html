@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Miami Bar & Cafe Copenhagen</title>
+    <meta name="description" content="Miami Bar & Cafe is an exotic nightclub located in the center of Copenhagen. " />
+    <link rel="shortcut icon" type="image/png" href="../images/img_bar.png" />
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,600,800,1000" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../style.css">
+    <link rel="stylesheet" type="text/css" href="job-style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body>
+    <div id="topButton">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+    <div id="navigation">
+        <div id="logo-div">
+            <img id="logo" src="../images/logo_white_transparent.png" alt="Miami Bar & Cafe logo">
+        </div>
+        <i id="burger" class="fas fa-bars"></i>
+
+        <div class="anim" id="navigation-links">
+            <ul>
+                <li><a href="../">HOME</a></li>
+                <li><a href="#destination-1">ABOUT US</a></li>
+                <li><a href="#destination-2">PERKS OF THE JOB</a></li>
+                <li><a href="#destination-3">APPLY</a></li>
+                <li><a href="#destination-4">CONTACT</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="header-job">
+        <div id="header-h1" data-aos="zoom-out" data-aos-duration="1000" data-aos-easing="ease" data-aos-once="true">
+            <h1>JOIN OUR TEAM</h1>
+        </div>
+        <div id="header-button-job" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease"
+            data-aos-once="true">
+            <button type="button" onclick="location.href='#destination-3';">APPLY NOW</button>
+        </div>
+        <div class="mouse-scroll-container">
+            <div class="mouse-scroll loading-spinner">
+                <div class="one"></div>
+                <div class="two"></div>
+                <div class="three"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="container-wrap">
+        <div class="destination" id="destination-1"></div>
+        <div class="container" id="desc-container" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease"
+            data-aos-once="true">
+            <div class="icon-div">
+                <img src="../images/shot-glass.png">
+            </div>
+            <h2>
+                WHO ARE WE?
+            </h2>
+            <div id="description-container">
+                <span>We have fun. We work hard. We continuously develop ourselves to be the best person we can
+                    be.</span>
+                <br><br><span>To top it off, we do it all while making lifelong friends.</span>
+                <br><br><span style="font-size: 24px; font-weight: 900;">AND, IT JUST HAPPENS, WE ARE HIRING.</span>
+            </div>
+
+        </div>
+        <div class="destination" id="destination-2"></div>
+        <div class="container" id="services-container">
+            <div class="icon-div">
+                <img src="../images/shot-glass.png">
+            </div>
+            <h2>
+                PERKS OF THE JOB
+            </h2>
+            <div id="flex-services-container">
+                <div class="perks" data-aos="flip-left" data-aos-duration="1000" data-aos-easing="ease"
+                    data-aos-once="true">
+                    <img src="image-job/time.png">
+                    <h3>FLEXIBLE WORKING HOURS</h3>
+                    <p>Miami Bar operates on the weekends during the night and provides a flexible work schedule.</p>
+                </div>
+                <div class="perks" data-aos="flip-left" data-aos-duration="1000" data-aos-easing="ease"
+                    data-aos-once="true">
+                    <img src="image-job/friends.png">
+                    <h3>FRIENDLY ENVIRONMENT</h3>
+                    <p>Surrounded by welcoming and frindly coworkers, we pride ourselves on the amazing team Miami has
+                        come to know.</p>
+                </div>
+                <div class="perks" data-aos="flip-right" data-aos-duration="1000" data-aos-easing="ease"
+                    data-aos-once="true">
+                    <img src="image-job/central2.png">
+                    <h3>CENTRALLY LOCATED</h3>
+                    <p>Located in Gammletorv near Norreport and Radhuspladsen stations providing you with an accessible
+                        workplace.</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="destination" id="destination-3"></div>
+        <div class="container" id="apply-container">
+            <div class="icon-div">
+                <img src="../images/shot-glass.png">
+            </div>
+            <h2>
+                APPLY NOW
+            </h2>
+            <h3 class="heading-event">Don't hesitate to be part of our team. Join us now!
+            </h3>
+            <form action="https://formspree.io/info@miamibar.dk" method="POST" id="grid-apply-container"
+                data-aos="flip-up" data-aos-duration="1000" data-aos-easing="ease" data-aos-once="true">
+                <div id="inline-grid">
+                    <input type="hidden" name="_subject" value="att:Job" />
+                    <input class="main-input" id="input-1" type="text" autocomplete="on" name="name"
+                        placeholder="Full name" required>
+                    <input class="main-input" id="input-2" type="email" name="email" placeholder="Email"
+                        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" autocomplete="on" required>
+                    <input class="main-input" id="input-3" type="tel" name="phone" placeholder="Phone no." required>
+                    <select name="position">
+                        <option disabled="disabled" selected="selected">Choose position</option>
+                        <option value="Runner">Runner</option>
+                        <option value="Bartender">Bartender</option>
+                        <option value="Wardrobe_girl">Wardrobe girl</option>
+                        <option value="Waitress">Waitress</option>
+                    </select>
+                    <label id="label-cv">Please send your CV to info@miamibar.dk // att. Job</label>
+                </div>
+                <textarea id="input-7" name="comments" placeholder="Tell us a little bit about yourself..."></textarea>
+
+                <div id="apply-button-div">
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+        <div class="destination" id="destination-4"></div>
+        <div class="container" id="contact-container">
+            <div class="icon-div">
+                <img src="../images/shot-glass.png">
+            </div>
+            <h2>
+                GET IN TOUCH
+            </h2>
+            <h3 class="heading-event">Don’t hesitate to contact us! We are here for you.
+            </h3>
+            <div id="flex-contact-container">
+                <div class="contact-item" data-aos="zoom-in" data-aos-duration="1000" data-aos-easing="ease"
+                    data-aos-once="true">
+                    <img src="../images/location-cropped.png">
+                    <p class="contact-p">Gammeltorv 16, 1457 Kobenhavn</p>
+                </div>
+                <div class="contact-item" data-aos="zoom-in" data-aos-duration="1000" data-aos-easing="ease"
+                    data-aos-once="true">
+                    <img src="../images/email-cropped.png">
+                    <p class="contact-p">info@miamibar.dk</p>
+                </div>
+                <div class="contact-item" data-aos="zoom-in" data-aos-duration="1000" data-aos-easing="ease"
+                    data-aos-once="true">
+                    <img src="../images/telephone-cropped.png">
+                    <p class="contact-p">+45 28 41 55 49</p>
+                </div>
+            </div>
+        </div>
+        <div id="social-container">
+            <ul>
+                <li><a href="https://www.facebook.com/MiamiBarCph/" target="_blank"><img
+                            src="../images/facebook-logo_red.png"></a></li>
+                <li><a href="https://www.instagram.com/miamibar_cph/" target="_blank"><img
+                            src="../images/instagram-logo_red.png"></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="footer">
+        <p>Miami Bar & Cafe Copenhagen</p>
+    </div>
+    <script src="../js/menu.js"></script>
+    <!--<script src="form_file.js"></script> -->
+    <script src="../js/top.js"></script>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/scroll.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
