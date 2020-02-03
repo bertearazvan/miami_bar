@@ -15,8 +15,9 @@ h1 {
 
 
 #language img {
-    width: 20px;
+    width: 26px;
     height: auto;
+    cursor: pointer;
 }
 
 #header-ny {

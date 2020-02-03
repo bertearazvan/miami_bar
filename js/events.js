@@ -5,7 +5,6 @@ fetch("https://mrbertea.com/wordpress/theme7/wp-json/wp/v2/maimi_events").then(e
     let c = new Date(data[0].acf.date).setHours(23, 59, 59, 999);
 
 
-
     data.forEach(element => {
 
         let c = new Date(element.acf.date).setHours(23, 59, 59, 999);
@@ -40,7 +39,7 @@ fetch("https://mrbertea.com/wordpress/theme7/wp-json/wp/v2/maimi_events").then(e
             var dateEvent = new Date(element.acf.date);
 
             let dateHtml;
-            if (dateEvent.getDay() < 10) {
+            if (dateEvent.getDate() < 10) {
                 var dateDay = '0' + dateEvent.getDate();
             } else {
                 var dateDay = dateEvent.getDate();
@@ -76,17 +75,42 @@ fetch("https://mrbertea.com/wordpress/theme7/wp-json/wp/v2/maimi_events").then(e
             desc.innerHTML = element.acf.event_description;
             eventDescDiv.appendChild(desc);
 
+            if (element.id == 146) {
+                console.log(element);
+
+                var pageDiv = document.createElement('div');
+                pageDiv.setAttribute('style', 'margin-top:80px; text-align: center;')
+                descContainer.appendChild(pageDiv);
+
+                var buttonPage = document.createElement('a');
+                buttonPage.setAttribute('href', '../new-year/index.html');
+                buttonPage.setAttribute('class', 'entry-price');
+                buttonPage.setAttribute('target', "_self");
+                buttonPage.innerHTML = "SEE EVENT PAGE";
+                pageDiv.appendChild(buttonPage);
+            }
+
             var buttonDiv = document.createElement('div');
             buttonDiv.setAttribute('style', 'margin-top:80px; text-align: center;')
             descContainer.appendChild(buttonDiv);
 
             var buttonEvent = document.createElement('a')
             buttonEvent.setAttribute('class', 'entry-price');
+
+            if (element.id == 146) {
+                buttonEvent.setAttribute('id', 'page-button');
+                buttonEvent.style.padding = '12px 25px';
+            }
+
             buttonEvent.setAttribute('href', element.acf.event_link);
             buttonEvent.setAttribute('target', "_blank");
-            buttonEvent.innerHTML = "SEE EVENT";
+            buttonEvent.innerHTML = "SEE FACEBOOK EVENT";
             buttonDiv.appendChild(buttonEvent);
+
+
         }
+
+
     });
 
     if (el == 0) {

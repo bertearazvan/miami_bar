@@ -35,7 +35,8 @@
                 <li><a id="menu-tables" href="#destination-3">TABLE PACKAGES</a></li>
                 <li><a id="menu-contact" href="#destination-4">CONTACT</a></li>
                 <li id="language">
-                    <img src="image-ny/en-flag.png">
+                    <img id="image-flag-en" onclick="addEnglish();" src="image-ny/en-flag.png">
+                    <img id="image-flag-dk" onclick="addDanish();" src="image-ny/dk-flag.png">
                 </li>
             </ul>
         </div>
@@ -43,11 +44,11 @@
 
     <div id="header-ny">
         <div id="header-h1" data-aos="zoom-out" data-aos-duration="1000" data-aos-easing="ease" data-aos-once="true">
-            <h1>HAPPY NEW YEAR!</h1>
+            <h1 id="main-header">HAPPY NEW YEAR!</h1>
         </div>
         <div id="header-button-ny" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease"
             data-aos-once="true">
-            <button type="button" onclick="location.href='#destination-3';">RESERVE NOW</button>
+            <button type="button" id="reserve-button" onclick="location.href='#destination-3';">RESERVE NOW</button>
         </div>
         <div class="mouse-scroll-container">
             <div class="mouse-scroll loading-spinner">
@@ -75,11 +76,11 @@
                     unforgettable. Our exotic nightclub contains 3 floors with 3 bars, a covered outside courtyard and
                     an exclusive VIP lounge. Experience the grand fireworks show on Gammeltorv
                     and enjoy champagne on the house when the midnight comes.</span>
-                <br><br><span id="description-text-1">
+                <br><br><span id="description-text-3">
                     Preorder only 350kr & at the door during the night 450kr
                 </span>
 
-                <br><br><span id="description-text-1">
+                <br><br><span id="description-text-4">
                     During the night there is free bar that includes drinks, beer and soda.
                 </span>
 
@@ -125,12 +126,12 @@
             </div>
         </div>
 
-        <div class="destination" id="destination-3"></div>
+
         <div class="container" id="gallery-container">
             <div class="icon-div">
                 <img src="../images/shot-glass.png">
             </div>
-            <h2>
+            <h2 id="gallery-title">
                 GALLERY
             </h2>
             <div id="myModal" class="modal">
@@ -159,7 +160,7 @@
             </div>
         </div>
 
-        <div class="destination" id="destination-4"></div>
+        <div class="destination" id="destination-3"></div>
         <div class="container" id="reserve-table-container">
             <div class="icon-div">
                 <img src="../images/shot-glass.png">
@@ -173,14 +174,13 @@
             </h3>
             <div id="package-wrapper" style="margin-top: 50px;" data-aos="flip-up" data-aos-duration="1000"
                 data-aos-easing="ease" data-aos-once="true">
-                <h3 style="font-size: 18px; margin-top: 45px;">REGULAR TABLE PACKAGES</h3>
+                <h3 id="regular-title" style="font-size: 18px; margin-top: 45px;">REGULAR TABLE PACKAGES</h3>
                 <div id="flex-tables-container">
                     <div class="table-package">
                         <h3 id="tb-1-header">Table package 1</h3>
                         <p id="tb-1-people" style="padding: 5px;">For 4-5 people</p>
                         <p id="tb-1-shisha">1 Shisha</p>
                         <p id="tb-1-bottles">2 bottles of House Spirits </p>
-                        <p id="tb-1-price" class="package-price">1.995 kr</p>
                         <p id="tb-1-bottleC">1 bottle LucBelaire Rose </p>
                         <p id="tb-1-sodas">Unlimited sodas for mixing</p>
                         <p class="package-price">1.995 kr</p>
@@ -240,8 +240,6 @@
                         <p id="tb-5-snacks">Cake, snacks and table decorations</p>
                         <p class="package-price">16.995 kr</p>
                     </div>
-
-
                 </div>
                 <h3 id="reserve-right" style="font-size:16px;font-weight: 600;
                 color: #d3d3d3;">
@@ -264,7 +262,7 @@
 
 
 
-        <div class="destination" id="destination-5"></div>
+        <div class="destination" id="destination-4"></div>
         <div class="container" id="contact-container">
             <div class="icon-div">
                 <img src="../images/shot-glass.png">
