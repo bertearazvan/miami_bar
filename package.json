@@ -2,10 +2,11 @@
   "name": "miamibar",
   "version": "1.0.0",
   "description": "Miami bar Copenhagen",
-  "main": "index.html",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.html"
+    "start": "node index.js",
+    "server": "nodemon index.js"
   },
   "repository": {
     "type": "git",
@@ -16,5 +17,11 @@
   "bugs": {
     "url": "https://github.com/bertearazvan/miami_bar/issues"
   },
-  "homepage": "https://github.com/bertearazvan/miami_bar#readme"
+  "homepage": "https://github.com/bertearazvan/miami_bar#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
 }
