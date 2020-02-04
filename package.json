@@ -1,0 +1,19 @@
+{
+  "name": "www.miamibar.dk",
+  "version": "1.0.0",
+  "description": "Miami bar Copenhagen",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bertearazvan/miami_bar.git"
+  },
+  "author": "Razvan Bertea",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bertearazvan/miami_bar/issues"
+  },
+  "homepage": "https://github.com/bertearazvan/miami_bar#readme"
+}
